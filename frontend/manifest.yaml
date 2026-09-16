@@ -28,7 +28,6 @@ spec:
       containers:
       - name: frontend
         image: bettari1993/frontend:v1
-
 ---
 kind: Service
 apiVersion: v1
@@ -36,6 +35,7 @@ metadata:
   name: frontend
   namespace: expense
 spec:
+  type: LoadBalancer
   selector:
     app: frontend
     tier: web
