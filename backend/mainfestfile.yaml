@@ -72,7 +72,7 @@ metadata:
   namespace: expense
 spec:
   scaleTargetRef:
-    apiVersion: app/v1
+    apiVersion: apps/v1
     kind: Deployment
     name: backend
   minReplicas: 1
